@@ -33,7 +33,7 @@ obj // how would look like?
 /**
 {
   // what's here?
-   __proto__: {
+   prototype: {
      // what's here?
   }
 }
