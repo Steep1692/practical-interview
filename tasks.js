@@ -32,10 +32,7 @@ obj // how would look like?
 
 /**
 {
-  // what's here?
-   prototype: {
-     // what's here?
-  }
+  // what's here
 }
 **/
 
