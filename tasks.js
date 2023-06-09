@@ -67,7 +67,7 @@ const obj = {
 obj.method() // I'm a props
 
 const { method } = obj;
-method() // ? and why any solutions
+method() // ? and why and solutions
 
 
 
@@ -92,4 +92,10 @@ React.createElement(
   {color: 'blue', shadowSize: 2},
   'Click Me'
 )
+
+
+// ––––– TASK 6
+// Explain the code, and differences between {takeEvery} and {takeLatest}
+takeEvery(dialogActionsConstants.PULL_BY_ID, pullDialogById)
+takeLatest(dialogActionsConstants.PULL_BY_ID, pullDialogById)
 
