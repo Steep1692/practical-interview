@@ -94,8 +94,23 @@ React.createElement(
 )
 
 
-// ––––– TASK 6
+// ––––– TASK 7
 // Explain the code, and differences between {takeEvery} and {takeLatest}
 takeEvery(dialogActionsConstants.PULL_BY_ID, pullDialogById)
 takeLatest(dialogActionsConstants.PULL_BY_ID, pullDialogById)
 
+// ––––– TASK 8
+// Difference?
+export default A;
+export const B;
+
+
+// ––––– TASK 9
+// Explain the code
+const noteElements = elContainer.querySelectorAll(
+`a.${CONTENT_CLASSES.FOOT_NOTE},a.${CONTENT_CLASSES.CHAPTER_END_NOTE},a.${CONTENT_CLASSES.BOOK_END_NOTE}`
+);
+
+// ––––– TASK 10
+// Explain the reg exp
+new RegExp(/{(audio|image|video):(.+?)}/gm)
