@@ -17,25 +17,16 @@ class Obj {
 		this.prop = prop
 	}
 
-    announce(…args) {
-       alert(‘Announcing: ‘, args)
-    }
-
-    static announceProp() {
+	announce(…args) {
+		alert(‘Announcing: ‘, args)
+	}
+	
+	static announceProp() {
 		announce(this.prop)
 	}
 }
 
 const obj = new Obj()
-
-obj // how would look like?
-
-/**
-{
-  // what's here
-}
-**/
-
 
 
 
@@ -47,16 +38,37 @@ obj // how would look like?
 const a = { foo: ‘bar’ }
 const b = { foo: ‘bar’ }
 
-a === b // ? and why
-
-
-
-
-
+a === b // ?
 
 
 
 // ––––– TASK 4
+// Explain the code
+React.createElement(
+  React.Fragment,
+  {color: 'blue', shadowSize: 2},
+  'Click Me'
+)
+
+
+// ––––– TASK 5
+// Difference?
+export default A;
+export const B;
+
+
+// ––––– TASK 6
+// Explain the code
+const noteElements = elContainer.querySelectorAll(
+`a.${CONTENT_CLASSES.FOOT_NOTE},a.${CONTENT_CLASSES.CHAPTER_END_NOTE},a.${CONTENT_CLASSES.BOOK_END_NOTE}`
+);
+
+// ––––– TASK 7
+// Explain the reg exp
+new RegExp(/{(audio|image|video):(.+?)}/gm)
+
+
+// ––––– TASK 8
 const obj = {
   props: "I'm a props",
   method: function(){
@@ -73,11 +85,12 @@ method() // ? and why and solutions
 
 
 
-// ––––– TASK 5
+// ––––– TASK 9
 /** Differences  **/
 // #1
 alert(foo());
 const foo = function() { return 5; }
+
 // #2
 alert(foo());
 function foo() { return 5; }
@@ -85,32 +98,8 @@ function foo() { return 5; }
 
 
 
-// ––––– TASK 6
-// Explain the code
-React.createElement(
-  React.Fragment,
-  {color: 'blue', shadowSize: 2},
-  'Click Me'
-)
-
-
-// ––––– TASK 7
+// ––––– TASK 10
 // Explain the code, and differences between {takeEvery} and {takeLatest}
 takeEvery(dialogActionsConstants.PULL_BY_ID, pullDialogById)
 takeLatest(dialogActionsConstants.PULL_BY_ID, pullDialogById)
 
-// ––––– TASK 8
-// Difference?
-export default A;
-export const B;
-
-
-// ––––– TASK 9
-// Explain the code
-const noteElements = elContainer.querySelectorAll(
-`a.${CONTENT_CLASSES.FOOT_NOTE},a.${CONTENT_CLASSES.CHAPTER_END_NOTE},a.${CONTENT_CLASSES.BOOK_END_NOTE}`
-);
-
-// ––––– TASK 10
-// Explain the reg exp
-new RegExp(/{(audio|image|video):(.+?)}/gm)
