@@ -26,9 +26,6 @@ class Obj {
 	}
 }
 
-const obj = new Obj()
-
-
 
 
 
@@ -42,64 +39,38 @@ a === b // ?
 
 
 
+
+
+
+
 // ––––– TASK 4
 // Explain the code
-React.createElement(
-  React.Fragment,
-  {color: 'blue', shadowSize: 2},
-  'Click Me'
-)
+const className1 = 'test1'
+const className2 = 'test2'
+const $specificLinks = $container.querySelectorAll(`a.${className1},a.${className2}`);
+
+
+
+
 
 
 // ––––– TASK 5
-// Difference?
-export default A;
-export const B;
-
-
-// ––––– TASK 6
-// Explain the code
-const noteElements = elContainer.querySelectorAll(
-`a.${CONTENT_CLASSES.FOOT_NOTE},a.${CONTENT_CLASSES.CHAPTER_END_NOTE},a.${CONTENT_CLASSES.BOOK_END_NOTE}`
-);
-
-// ––––– TASK 7
-// Explain the reg exp
-new RegExp(/{(audio|image|video):(.+?)}/gm)
-
-
-// ––––– TASK 8
 const obj = {
-  props: "I'm a props",
+  text: "Hello",
   method: function(){
-    console.log( this.props )
+    console.log( this.text )
   }
 }
 
-obj.method() // I'm a props
+// works OK, prints "Hello" to the console
+obj.method()
 
+// doesn't work, prints "undefined" to the console.
+// Why and solutions?
 const { method } = obj;
-method() // ? and why and solutions
+method()
 
 
-
-
-
-// ––––– TASK 9
-/** Differences  **/
-// #1
-alert(foo());
-const foo = function() { return 5; }
-
-// #2
-alert(foo());
-function foo() { return 5; }
-
-
-
-
-// ––––– TASK 10
-// Explain the code, and differences between {takeEvery} and {takeLatest}
-takeEvery(dialogActionsConstants.PULL_BY_ID, pullDialogById)
-takeLatest(dialogActionsConstants.PULL_BY_ID, pullDialogById)
-
+// ––––– TASK 6
+// 1. Write a function that reverses a string.
+// 2. Write an asynchronous function that simulates fetching data from an API.
